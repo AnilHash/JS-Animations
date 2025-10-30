@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #222;
+}
+h2 {
+  position: relative;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: default;
+  font-weight: 600;
+}
+h2 span {
+  color: #555;
+  transition: 0.25s;
+}
+h2:hover span {
+  color: #00ff2a;
+  text-shadow: 0 0 5px #0f0, 0 0 5px #0f0, 0 0 5px #0f0;
+}
