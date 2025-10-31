@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./clock.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colorful Text Animation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 class="text">Anil Araganji</h2>
+    <script>
+      let txt = document.querySelector(".text");
+      let htmlSpans = txt.innerHTML
+        .split("")
+        .map((ele, idx) => {
+          return `<span style="animation-duration:${
+            Math.random() * 5
+          }s;filter:hue-rotate(${idx * 50}deg)">${ele}</span>`;
+        })
+        .join("");
+      txt.innerHTML = htmlSpans;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #222;
+}
+h2 {
+  font-size: 2em;
+  position: relative;
+  letter-spacing: 0.25em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff2;
+}
+@keyframes animateText {
+  0%,
+  20% {
+    color: #fff2;
+  }
+  21%,
+  79% {
+    color: #0f0;
+  }
+  80%,
+  100% {
+    color: #fff2;
+  }
+}
+h2 span {
+  position: relative;
+  animation: animateText 1s linear infinite;
+}
